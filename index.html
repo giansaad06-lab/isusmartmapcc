@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Isabela State University Cauayan-Campus Interactive Map</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-content">
+    <div class="logo-title">
+      <img src="isulogo.png" alt="ISU Logo" class="isu-logo" />
+      <div class="title-text">
+        <h1>ISABELA STATE UNIVERSITY</h1>
+        <p>Cauayan Campus Smart Map</p>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#map">Map</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<div class="controls">
+  <input type="text" id="searchInput" placeholder="Search Program..." onkeyup="filterPrograms()" />
+  <select id="collegeFilter" onchange="filterPrograms()">
+    <option value="all">All Colleges</option>
+    <option value="College of CCSICT">College of CCSIT</option>
+    <option value="College of Agriculture">College of Agriculture</option>
+    <option value="College of Law">College of Law</option>
+    <option value="College of Business and Management">College of Business and Management</option>
+    <option value="College of Education">College of Education</option>
+    <option value="College of Criminal and Justice Education">College of Criminal and Justice Education</option>
+    <option value="College of Polytechnic">College of Polytechnic</option>
+  </select>
+</div>
+
+<div id="programList" class="programs"></div>
+
+<h2 style="text-align:center; margin-top: 40px;" id="map-title">ISU CAUAYAN CAMPUS MAP</h2>
+<div id="map" style="height: 400px;"></div>
+
+<section class="mission-vision"><div class="mission-vision">
+  <div class="vision">
+<h2>Vision</h2>
+<p>A leading Research University in the
+ASEAN Region.</p>
+</div>
+<div class="mission">
+<h2>Missions </h2>
+<p>The Isabela State University is committed
+to develop globally competitive human, technological resources and services through quality instruction, innovative
+research, responsive community engagement and viable resource management programs for inclusive growth and sustainable
+development.</p>
+</div>
+</div>
+
+<br>
+<hr>
+<section id="about">
+  <h2>About ISU Cauayan</h2>
+  <p>ISU Cauayan is one of the leading campuses of Isabela State University, offering a range of programs from Information Technologies, Political Sciences, Business Administrations, Education, and etc. This site helps students, guests, and faculty locate buildings and understand available academic offerings.</p>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>Email: 
+  <a 
+    href="https://mail.google.com/mail/?view=cm&fs=1&to=@isucauayan.edu.ph" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    @isucauayan.edu.ph
+  </a>
+</p>
+  <p>Located at: Brgy. San Fermin Cauayan City Isabela</p>
+</section>
+
+<section class="quick-links">
+  <h2>Quick Links</h2>
+  <a href="https://isu.edu.ph/admissions/" target="_blank" title="Goes to isu.edu.ph">Admissions</a>
+  <a href="https://isu.edu.ph/school-calendar/" target="_blank" title="Goes to isu.edu.ph">School Calendar</a>
+  <a href="https://isu.edu.ph/careers/" target="_blank" title="Goes to isu.edu.ph">Careers</a>
+  <a href="https://isu.edu.ph/privacy-notice/" target="_blank" title="Goes to isu.edu.ph">Privacy Notice</a>
+</section>
+
+<footer>
+  <p>© 2025 Isabela State University - Cauayan Campus</p>
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

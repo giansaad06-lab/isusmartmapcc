@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+.program-header {
+  background: linear-gradient(to right, #3EC92A, #004d40);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.program-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px 20px;
+  gap: 20px;
+}
+
+.program-info {
+  flex: 1;
+  min-width: 250px;
+}
+
+.program-info h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #004d40;
+}
+
+.program-info p {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.program-image {
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+}
+
+.program-image img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.back-button {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.back-button a {
+  text-decoration: none;
+  color: white;
+  background-color: #004d40;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.back-button a:hover {
+  background-color: #00695c;
+}
+
+@media (max-width: 768px) {
+  .program-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .program-header {
+    font-size: 18px;
+    padding: 15px;
+  }
+
+  .program-info p {
+    font-size: 14px;
+  }
+
+  .program-info h2 {
+    font-size: 18px;
+  }
+
+  .back-button a {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
