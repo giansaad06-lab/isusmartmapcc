@@ -3,7 +3,7 @@ const programs = [
     name:"BS in Information Technology",
     college: "College of CCSICT",
     location: "CCSICT Building",
-    link: "programs/bsit.html",
+    link: "bsit.html",
     image: "ccsict.png"
   },
   {
