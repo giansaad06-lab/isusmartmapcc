@@ -4,48 +4,48 @@ const programs = [
     college: "College of CCSICT",
     location: "CCSICT Building",
     link: "bsit.html",
-    image: "ccsict.png"
+    image: "/ccsict.png"
   },
   {
     name: "BS in Agriculture",
     college: "College of Agriculture",
     location: "IAT Building",
-    link: "programs/agri.html",
+    link: "agri.html",
     image: "agri.jpg"
   },
   {
     name: "BS in Political Science",
     college: "College of Law",
     location: "SAS Building",
-    link: "programs/polsci.html",
+    link: "polsci.html",
     image: "polsci.png"
   },
   {
     name: "BS in Business Administration",
     college: "College of Business and Management",
     location: "New Building",
-    link: "programs/bsba.html",
+    link: "bsba.html",
     image: "cbm.jpg"
   },
   {
     name: "BS in Secondary Education",
     college: "College of Education",
     location: "CED Old Building",
-    link: "programs/secondary-ed.html",
+    link: "secondary-ed.html",
     image: "secondaryeduc.jpg"
   },
   {
     name: "BS in Criminology",
     college: "College of Criminal and Justice Education",
     location: "CCJE Building",
-    link: "programs/crim.html",
+    link: "crim.html",
     image: "crim.jpg"
   },
   {
     name: "BS in Automotive",
     college: "College of Polytechnic",
     location: "PS Building",
-    link: "programs/auto.html",
+    link: "auto.html",
     image: "auto.png"
   }
 ];
